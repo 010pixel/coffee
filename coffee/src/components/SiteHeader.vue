@@ -39,7 +39,7 @@ setup () {
 .hero-bg {
   border: 1px solid white;
   /* background-image: url(assets/bg2.jpeg); */
-  background-image: url(assets/bg1.jpeg);
+  background-image: url(/assets/bg1.jpeg);
   background-size: cover;
   /* background-position: center top; */
 }
