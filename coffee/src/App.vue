@@ -9,7 +9,7 @@ const data = ref(coinData);
 <template>
   <SiteHeader></SiteHeader>
   <main>
-    <div class="py-3 border-bottom" id="pay-by-cryptocurrency">
+    <div class="py-3 border-bottom border-top" id="pay-by-cryptocurrency">
       <div class="container d-flex flex-wrap justify-content-center">
         <a href="#pay-by-cryptocurrency" class="d-flex align-items-center text-dark text-decoration-none">
           <span class="fs-4 d-flex align-items-center"><i class="fab fa-bitcoin fs-1 mx-3"></i> Cryptocurrency</span>
