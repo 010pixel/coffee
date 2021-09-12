@@ -1,8 +1,17 @@
 <script>
 export default {
 setup () {
-  return {
-  }
+  const scrollToCrypto = () => {
+    window.scroll({
+      top: document.getElementById('pay-by-cryptocurrency').offsetTop, 
+      left: 0, 
+      behavior: 'smooth'
+    });
+    return false;
+  };
+ return {
+   scrollToCrypto
+ }
 }};
 </script>
 
@@ -18,7 +27,7 @@ setup () {
           Your contribution helps me to run all the cloud servers and get coffee to stay awake and write codes.
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="#pay-by-cryptocurrency" class="btn btn-primary px-4 gap-3">
+          <a href="#pay-by-cryptocurrency" class="btn btn-primary px-4 gap-3" @click="scrollToCrypto" onclick="return false;">
             <i class="fab fa-bitcoin fs-1"></i>
             <div class="mt-1">Cryptocurrency</div>
           </a>
